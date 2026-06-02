@@ -6,10 +6,8 @@ services:
     dockerContext: .
     plan: free          # cambiar a 'starter' si necesitas más recursos
     healthCheckPath: /health
-    disk:
-      name: pdf-maker-storage
-      mountPath: /var/data
-      sizeGB: 1
+    # Nota: Los 'disks' (almacenamiento persistente) no están disponibles en el plan gratuito de Render.
+    # Si necesitas guardar archivos de forma permanente, tendrías que usar el plan 'starter' o un servicio como AWS S3.
     envVars:
       - key: APP_NAME
         value: PDF Maker
