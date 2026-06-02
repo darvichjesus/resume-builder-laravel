@@ -18,7 +18,7 @@ services:
       - key: APP_KEY
         generateValue: true   # Render genera uno seguro automáticamente
       - key: APP_URL
-        value: https://pdf-maker.onrender.com   # actualiza con tu URL real
+        value: https://pdf-maker-ipom.onrender.com
       - key: LOG_LEVEL
         value: error
       - key: LOG_CHANNEL

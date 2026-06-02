@@ -25,6 +25,9 @@ fi
 
 cd "$APP_DIR"
 
+# Ensure views directory exists to avoid "View path not found" error during artisan commands
+mkdir -p resources/views
+
 # ── Environment ────────────────────────────────────────────────────────────
 echo "==> Caching configuration..."
 php artisan config:cache
